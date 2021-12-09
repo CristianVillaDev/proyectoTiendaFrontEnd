@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tienda Generica</title>
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="contenedor">
+		<div class="formulario sombra-dark">
+			<h1>Iniciar Sesión</h1><br>
+			<form id="formulario">
+			
+				<h5 class="text-danger" id="mensaje"></h5>
+				
+				<div class="campos">
+					<label htmlFor="usuario">Usuario</label> <input type="text" id="usuario"
+						name="usuario" placeholder="Ingresa tu usuario" required/>
+				</div>
+
+				<div class="campos">
+					<label htmlFor="password">Password</label> <input type="password"
+						id="password" name="password" placeholder="Ingresa tu contraseña" required />
+				</div>
+				
+				<div class="campos">
+					<select class="form-select" id="ciudad" required>
+					  <option value="">Seleccione Ciudad</option>
+					  <option value="1">Bogotá</option>
+					  <option value="2">Medellin</option>
+					  <option value="3">Cali</option>
+					</select>
+				</div>
+				
+				<div class="campos bg-info d-grid gap-2">
+					<input type="submit" class="btn btn-primary" value="Iniciar Sesión" />
+				</div>
+				<br>
+				<a href="registro.html">No estas registrado? Crea una Nueva Cuenta</a>
+			</form>
+		</div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+	<script src="scripts/auth.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+#totalizador{
+    position: relative;
+    left: 22%; 
+}
+
+#totalIVA{
+    position: relative;
+    left: 37%; 
+}
+
+#totalVentaIVA{
+    position: relative; 
+}
+
+#valorVenta{
+    position: relative;
+    left: 30%; 
+}
+
+#confirmarVenta{
+    position:relative;
+    left: 20%; 
+}

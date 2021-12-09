@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda Generica</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ventas.css">
+</head>
+<body>
+    <h2>TIENDA GENERICA</h2>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Grupo 48_6</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+				aria-controls="navbarColor03" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarColor03">
+
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item"><a class="nav-link" href="principal.html" id="accesoUsuario">Principal</a></li>
+					<li class="nav-item"><a class="nav-link active" href="ventas.html" id="accesoVentas">Ventas</a></li>
+				</ul>
+		
+				<form class="form-inline">
+					
+					<button class="btn btn-danger my-2 my-sm-0" id="session"
+						type="button">Cerrar sesión</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid row pl-0 "></div>
+		<div class="container p-2" style="border: 1px solid #BEB8B6;">
+			<form id="formulario">
+				<h4 class="text-center" style="font-size: 20px">Gestión de
+					Ventas</h4>
+					<a class="btn btn-info my-2 my-sm-0" id="nueva" href="ventas.html">
+						Nueva Venta
+					</a>
+				<div class="container">
+					<h3 class="mx-auto" id="mensaje"></h3>
+				</div>
+				<br>
+				<div class="row g-3">
+					<div class="col-md-3">
+						<input type="number" class="form-control" id="cedula"
+							name="inputCedula" placeholder="Cédula Cliente" required style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-2">
+						<input type="button" name="buscarCliente" id="buscarCliente"
+							class="btn btn-primary" value="Buscar" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-4">
+						<input type="text" class="form-control" id="nombreCliente" disabled
+							name="nombreCliente" placeholder="Nombre Cliente" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-3">
+						<input type="number" class="form-control" id="consecutivo" disabled
+							name="inputConse" placeholder="Consecutivo" style="border: 1px solid #BEB8B6;">
+					</div>
+				</div>
+				<br>
+				<div class="row g-3">
+					<div class="col-md-2">
+						<label for="codigo">Código Producto</label> <input type="number" required
+							class="form-control" id="CodProducto1" name="inputCodProducto" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-2">
+						<br> <input type="button" name="buscarProducto"
+							id="buscarProducto1" class="btn btn-primary"
+							style="margin-bottom: 6px" value="Buscar" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-4">
+						<label for="nombre">Nombre Producto</label> <input type="text" disabled
+							class="form-control" id="nombreProducto1" name="nombreProducto1" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-1">
+						<label for="cantidad">Cantidad</label> <input type="number" required
+							class="form-control" id="Cantidad1" name="Cantidad1" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-3">
+						<label for="Valor">Valor Total</label> <input type="number" disabled
+							class="form-control" id="valorVenta1" name="Valor1" style="border: 1px solid #BEB8B6;">
+					</div>
+				</div>
+
+				<div class="row g-3">
+					<div class="col-md-2">
+						<input type="number" class="form-control" id="CodProducto2" required
+							name="CodProducto2" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-2">
+						<input type="button" name="buscarProducto" id="buscarProducto2"
+							class="btn btn-primary" style="margin-bottom: 6px" value="Buscar" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-4">
+						<input type="text" class="form-control" id="nombreProducto2" disabled
+							name="nombreProducto2" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-1">
+						<input type="number" class="form-control" id="Cantidad2" required
+							name="Cantidad2" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-3">
+						<input type="number" class="form-control" id="valorVenta2" disabled
+							name="Valor2" style="border: 1px solid #BEB8B6;">
+					</div>
+				</div>
+
+				<div class="row g-3">
+					<div class="col-md-2">
+						<input type="number" class="form-control" id="CodProducto3" required
+							name="CodProducto3" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-2">
+						<input type="button" name="buscarProducto" id="buscarProducto3"
+							class="btn btn-primary" style="margin-bottom: 6px" value="Buscar" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-4">
+						<input type="text" class="form-control" id="nombreProducto3" disabled
+							name="nombreProducto3" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-1">
+						<input type="number" class="form-control" id="Cantidad3" required
+							name="Cantidad3" style="border: 1px solid #BEB8B6;">
+					</div>
+					<div class="col-md-3">
+						<input type="number" class="form-control" id="valorVenta3" disabled
+							name="Valor3" style="border: 1px solid #BEB8B6;">
+					</div>
+				</div>
+                <br>
+                <div id="totalizador">
+                    <div class="row g-3">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-2"></div>
+
+                        <div class="col-auto">
+                            <label for="valorVenta" class="col-form-label">Total Venta</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="number" disabled id="valorVenta" class="form-control" style="border: 1px solid #BEB8B6;">
+                        </div>
+                    </div>
+
+				<br>
+                
+                    <div class="row g-3">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-auto">
+                            <label for="totalIVA">Total IVA</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="number" disabled class="form-control" id="totalIVA"
+                                name="totalIVA" style="border: 1px solid #BEB8B6;">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row g-3">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-auto">
+                            <label for="totalVentaIVA">Total venta con IVA</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="number" disabled class="form-control" id="totalVentaIVA"
+                                name="totalVentaIVA" style="border: 1px solid #BEB8B6;">
+                        </div>
+                    </div>
+
+                    <br>
+                    <div >
+						<h3 id="mensaje"></h3>
+                        <input type="submit" name="confirmarVenta" id="confirmarVenta"
+                            class="btn btn-primary" value="Confirmar Venta" >
+
+                    </div>
+                </div>
+			</form>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script
+		src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+	<script src="scripts/ventas.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+
+.contenedor {
+    background-color: var(--gris2);
+    height: 80vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+	width: 96%;
+    padding: 4rem 2rem;
+    max-width: 440px;
+    background-color: "white");
+    border-radius: 1.5rem;
+}
+
+.sombra-dark {
+  -webkit-box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
+  -moz-box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
+  box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
+}
+
+.campos {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+.campos:last-of-type {
+  margin: 0;
+}
+.campos label {
+  flex: 0 0 100px;
+  font-family: var(--textFont);
+}
+.campos input[type="password"],
+.campos input[type="email"], 
+.campos input[type="text"] {
+  border: 1px solid #e1e1e2;
+  padding: 1rem;
+  flex: 1;
+}
